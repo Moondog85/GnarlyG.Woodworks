@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html>
+<head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        
+        <title>Gnarly G. Woodworks</title>
+        <meta name="description" content="A local reataurant featuring mediterranean cuisine.">
+        <meta name="WjC" content="your Site Name">
+    
+        <!--Open Graph Protocol-->    
+        <meta property="og:Gnarly G. Woodworks" content="woodworking">
+        <meta property="og:type" content="website">
+        <meta property="og:url" content="https://www.mysite">
+        <meta property="og:description" content="A woodworking shop.">
+        <meta property="og:image" content="header4.png">
+        
+    
+        <!--set favicon--> 
+        <link rel="icon" href="/isla_280x280.52620325_je1i5hy7.ico">
+        
+        <link rel="apple-touch-icon" href="apple-touch-icon.png">
+       
+    
+        <link rel="stylesheet" href="css/styles.css">
+    
+        <header class="containerhead">
+            <img src="header5.png" width="70%">
+         </header>
+         <nav>
+           <ul class="containerbtn btn">
+            <li><button onclick="window.location.href='index.html';">Home</button></li>
+            <li><button onclick="window.location.href='portfolio.html';">Portfolio</button></li>
+            <li><button onclick="window.location.href='contact.html';">Contact</button></li>
+            <li><button onclick="window.location.href='info.html';">Info</button></li>
+         </ul>
+         </nav>
+
+  <title>Contact Form</title>
+  <script>
+    function validateForm() {
+      var name = document.getElementById("name").value;
+      var email = document.getElementById("email").value;
+      var message = document.getElementById("message").value;
+      
+      // Simple validation
+      if (name === "" || email === "" || message === "") {
+        alert("Please fill in all fields");
+        return false;
+      }
+      
+      // Email validation using a simple pattern
+      var emailPattern = /\S+@\S+\.\S+/;
+      if (!emailPattern.test(email)) {
+        alert("Please enter a valid email address");
+        return false;
+      }
+      
+      // Form submission - Here you can add code to submit the form data to a server
+      // For this example, we'll just display an alert
+      alert("Form submitted successfully!\nName: " + name + "\nEmail: " + email + "\nMessage: " + message);
+      return true;
+    }
+  </script>
+</head>
+<body>
+
+  <h2 class="form">Contact Us</h2>
+  <form onsubmit="return validateForm()" class="form">
+    <label for="name">Name:</label><br>
+    <input type="text" id="name" name="name"><br><br>
+    
+    <label for="email">Email:</label><br>
+    <input type="text" id="email" name="email"><br><br>
+    
+    <label for="message">Message:</label><br>
+    <textarea id="message" name="message"></textarea><br><br>
+    
+    <input type="submit" value="Submit">
+  </form>
+  <footer>
+    <div>
+        <img class="flexfooter" src="logo3.png" width="45%">
+    </div>
+    <div>
+        <p>Copyright WjC </p>
+    </div>
+</footer>
+</body>
+</html>
