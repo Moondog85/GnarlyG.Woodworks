@@ -265,12 +265,8 @@ footer div {
 /* Anything under 1024px */
 @media screen and (max-width: 1024px) {
     .image-grid{
-      width: 100%;
-      display: grid;
-      grid-template-columns: repeat(3, 1fr);
-      grid-template-rows: repeat(auto-fill, 120px);
-      grid-row-gap: .5em;
-      grid-column-gap: 1em;
+      --num-col: 2;
+      --row-height: 300px;
     }
     
 }
