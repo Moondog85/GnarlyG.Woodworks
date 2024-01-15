@@ -28,6 +28,10 @@ p {
   font-size: 1.5vw;
 }
 
+h2 {
+  font-size: 2vw;
+}
+
 section {
     display: flex;
     gap: 2rem 1rem;
