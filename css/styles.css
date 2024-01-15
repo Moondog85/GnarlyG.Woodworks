@@ -212,7 +212,7 @@ footer div {
 /* Info Page */
 
 #info {
-  background-image: url("../logo/7.jpg");
+  background-image: url('7.jpg');
   background-size: cover;
   background-position: center;
   color: #121312;
