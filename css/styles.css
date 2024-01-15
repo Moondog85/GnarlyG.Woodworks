@@ -169,7 +169,7 @@ box-shadow: 1px 1px 1px #5f746b4d;
   }
 
 #promo {
-    background-image: url('8.jpg');
+    background-image: url("../logo/8.jpg");
     background-size: cover;
     background-position: center;
     color: #161817;
